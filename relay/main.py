@@ -116,8 +116,8 @@ if __name__ == "__main__":
 
 	if args.debug:
 		print("Debug mode enabled. Printing debug info to stderr.", file=sys.stderr)
-		x = print(f"{relay.signal_output(relay.com())}")
-		logging.debug(f"{x}")
+		sig = print(f"{relay.signal_output(relay.com())}")
+		logging.debug(f"{sig}")
 		logging.basicConfig(level=logging.INFO)
 	
 	print(relay.main())
